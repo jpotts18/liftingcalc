@@ -4,7 +4,7 @@
   "description": "Calculations for One Rep Max Weightlifting (1RM)",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchAll",
     "build": "tsc"
   },
   "author": "",
