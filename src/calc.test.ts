@@ -84,7 +84,7 @@ describe("Brzycki Formula", () => {
 })
 
 describe("Epley Formula", () => {
-  it("100kg by 5 reps = 112.5", () => {
+  it("100kg by 5 reps = 116.7", () => {
     const oneRepMax = new OneRepMax(100, 5)
     expect(oneRepMax.epley()).toBe(116.65)
   })
@@ -99,7 +99,7 @@ describe("Lombardi Formula", () => {
     const oneRepMax = new OneRepMax(100, 5)
     expect(oneRepMax.lombardi()).toBe(117.4618943088019)
   })
-  it("400kg by 5 reps = 112.5", () => {
+  it("400kg by 5 reps = 469.8", () => {
     const oneRepMax = new OneRepMax(400, 5)
     expect(oneRepMax.lombardi()).toBe(469.8475772352076)
   }) 
