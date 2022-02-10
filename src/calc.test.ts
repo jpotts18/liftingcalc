@@ -116,7 +116,7 @@ describe("O'Conner Formula", () => {
   }) 
 })
 
-describe("Wathan Formula", () => {
+describe("Wathen Formula", () => {
   it("100kg by 5 reps = 116.6", () => {
     const oneRepMax = new OneRepMax(100, 5)
     expect(oneRepMax.wathen()).toBe(116.58250529118924)
