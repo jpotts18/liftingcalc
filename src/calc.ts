@@ -53,7 +53,9 @@ export class OneRepMax {
     oConner() {
         return this.kilograms * (1 + 0.025 * this.reps)
     }
-}
-export const brzycki = (kilograms: number, reps: number): number => {
-    return kilograms * (36 / (37 - reps))
+    wathen() {
+        const numerator = 100 * this.kilograms
+        const denominator = 48.8 + (53.8 * Math.E ** (-0.075 * this.reps))
+        return numerator / denominator
+    }
 }
