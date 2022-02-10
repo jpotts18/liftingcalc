@@ -104,3 +104,14 @@ describe("Lombardi Formula", () => {
     expect(oneRepMax.lombardi()).toBe(469.8475772352076)
   }) 
 })
+
+describe("O'Conner Formula", () => {
+  it("100kg by 5 reps = 112.5", () => {
+    const oneRepMax = new OneRepMax(100, 5)
+    expect(oneRepMax.oConner()).toBe(112.5)
+  })
+  it("400kg by 5 reps = 450", () => {
+    const oneRepMax = new OneRepMax(400, 5)
+    expect(oneRepMax.oConner()).toBe(450)
+  }) 
+})

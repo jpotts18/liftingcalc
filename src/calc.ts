@@ -50,6 +50,9 @@ export class OneRepMax {
     lombardi() {
         return this.kilograms * Math.pow(this.reps, 0.1)
     }
+    oConner() {
+        return this.kilograms * (1 + 0.025 * this.reps)
+    }
 }
 export const brzycki = (kilograms: number, reps: number): number => {
     return kilograms * (36 / (37 - reps))
