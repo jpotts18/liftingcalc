@@ -115,3 +115,14 @@ describe("O'Conner Formula", () => {
     expect(oneRepMax.oConner()).toBe(450)
   }) 
 })
+
+describe("Wathen Formula", () => {
+  it("100kg by 5 reps = 116.6", () => {
+    const oneRepMax = new OneRepMax(100, 5)
+    expect(oneRepMax.wathen()).toBe(116.58250529118924)
+  })
+  it("400kg by 5 reps = 466.3", () => {
+    const oneRepMax = new OneRepMax(400, 5)
+    expect(oneRepMax.wathen()).toBe(466.33002116475694)
+  }) 
+})
