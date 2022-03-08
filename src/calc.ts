@@ -1,7 +1,7 @@
 
-export const POUND_TO_KILO = 2.20462262
+import { NONNEGATIVE_ERROR_MSG } from "./utils"
 
-const NONNEGATIVE_ERROR_MSG = "Negative Numbers not allowed"
+export const POUND_TO_KILO = 2.20462262
 
 export const poundsToKilograms = (pounds: number): number => {
     if (pounds < 0) {
