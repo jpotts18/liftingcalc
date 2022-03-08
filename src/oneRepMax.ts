@@ -1,21 +1,5 @@
+import { kilogramsToPounds } from "./conversions";
 
-import { NONNEGATIVE_ERROR_MSG } from "./utils"
-
-export const POUND_TO_KILO = 2.20462262
-
-export const poundsToKilograms = (pounds: number): number => {
-    if (pounds < 0) {
-        throw Error(NONNEGATIVE_ERROR_MSG)
-    }
-    return pounds * POUND_TO_KILO
-}
-
-export const kilogramsToPounds = (kilograms: number): number => {
-    if (kilograms < 0) {
-        throw Error(NONNEGATIVE_ERROR_MSG);
-    }
-    return kilograms / POUND_TO_KILO
-}
 
 export class OneRepMax {
     kilograms: number;
