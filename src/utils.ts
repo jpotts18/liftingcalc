@@ -1,0 +1,1 @@
+export const NONNEGATIVE_ERROR_MSG = "Negative Numbers not allowed"

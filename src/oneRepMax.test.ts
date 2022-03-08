@@ -1,5 +1,6 @@
 
-import { OneRepMax, kilogramsToPounds, poundsToKilograms } from './calc'
+import { kilogramsToPounds, poundsToKilograms } from './conversions'
+import { OneRepMax } from './oneRepMax'
 
 const CONSTANT = 2.20462262
 const ONE_BILLION = 1e9
